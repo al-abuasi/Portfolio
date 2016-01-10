@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <title>Al's Portfolio</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/Main.js" ></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script	src="js/jquery.smint.js" type="text/javascript" ></script>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="js/=Main.js" ></script>
+
+    <script>
+        $(document).ready( function() {
+            $('.subMenu').smint({
+                'scrollSpeed' : 1000
+            });
+        });
+    </script>
 </head>
 <body>
 <div class="wrap ">
     <div class="section sTop">
         <div class="inner">
             <h1 class="title">Al Abuasi's Portfolio</h1>
-            <h2 class="subtitle">Feel free to scroll down or click on the Navigation bar</h2>
+            <h2 class="subtitle"></h2>
         </div>
     </div>
     <div class="subMenu" >
         <div class="inner">
             <a href="#sTop" class="subNavBtn">Home</a>
-            <a href="#s1" class="subNavBtn">Skills</a>
-            <a href="#s2" class="subNavBtn">Projects</a>
-            <a href="#s3" class="subNavBtn">Contact</a>
-            <a href="#s4" class="subNavBtn">Blog</a>
+            <a href="#s1" class="subNavBtn">About</a>
+            <a href="#s2" class="subNavBtn">Skills</a>
+            <a href="#s3" class="subNavBtn">Projects</a>
+            <a href="#s4" class="subNavBtn">Contact</a>
+            <a href="blog.html" class="subNavBtn extLink end">Blog</a>
         </div>
     </div>
     <div class="section s1">
         <div class="inner ">
-            <h1>Section 1</h1>
+            <h1>About Me</h1>
             <div id="summary" >
                 <p> Hello! My name is Almuthanna Abuasi (Al) and I am a Philadelphia based Web Developer.<br>
                     If I am not developing anything new, Im always learning new ways to strengthen my skills in Web Devolpment </p>
@@ -40,7 +49,7 @@
 </div>
 <div class="section s2">
     <div class="inner">
-        <h1>Section 2</h1>
+        <h1>My Skills</h1>
         <p><a href="#s4" class="intLink">Projects</a></p>
         <p><a href="#sTop" class="intLink">Home</a></p>
         <div class="skills-summary">
@@ -112,7 +121,28 @@
 </div>
 <div class="section s4">
     <div class="inner">
-        <h1>Section 4</h1>
+        <h1>Contact Me</h1>
+        <form action="/my-handling-form-page" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email" />
+
+            </div>
+            <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+
+            </div>
+
+            <div class="button">
+                <button type="submit">Send your message</button>
+            </div>
+        </form>
     </div>
 </div>
 </div>
