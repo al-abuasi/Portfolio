@@ -1,149 +1,608 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Al's Portfolio</title>
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js/Main.js" ></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script	src="js/jquery.smint.js" type="text/javascript" ></script>
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
-    <script>
-        $(document).ready( function() {
-            $('.subMenu').smint({
-                'scrollSpeed' : 1000
-            });
-        });
-    </script>
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Al Abuasi's Portfolio</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+
+
 </head>
+
 <body>
-<div class="wrap ">
-    <div class="section sTop">
-        <div class="inner">
-            <h1 class="title">Al Abuasi's Portfolio</h1>
-           
-        </div>
-    </div>
-    <div class="subMenu" >
-        <div class="inner">
-            <a href="#sTop" class="subNavBtn">Home</a>
-            <a href="#s1" class="subNavBtn">About</a>
-            <a href="#s2" class="subNavBtn">Skills</a>
-            <a href="#s3" class="subNavBtn">Projects</a>
-            <a href="#s4" class="subNavBtn">Contact</a>
-            <a href="blog.html" class="subNavBtn extLink end">Blog</a>
-        </div>
-    </div>
-    <div class="section s1">
-        <div class="inner ">
-            <h1>About Me</h1>
-            <div id="summary" >
-                <p> Hello! My name is Almuthanna Abuasi (Al) and I am a Philadelphia based Web Developer.<br>
-                    If I am not developing anything new, Im always learning new ways to strengthen my skills in Web Devolpment </p>
-                <p> I have a diverse set of skills ranging from HTML + CSS <br>+Javascript, all the way to PHP and Wordpress.</p>
-            </div>
-        </div>
-        <p><img src="images/al.jpg" id="profile" alt="Profile Picture"></p>
-    </div>
-</div>
-<div class="section s2">
-    <div class="inner">
-        <h1>My Skills</h1>
-        <p><a href="#s4" class="intLink">Projects</a></p>
-        <p><a href="#sTop" class="intLink">Home</a></p>
-        <div class="skills-summary">
-            <p>
-                The crossover between design and programming has always been of interest to me,
-                and since graduating from Wilmington University Spring of 2015, I've been lucky enough to work on several freelance
-                projects while  enrolling at the New York Design and Code Academy (NYCDA) to expand on my Skills.
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">I'm Al Abuasi.</h1>
+            <h3>I'm a Philadelphia based <span>Web Developer</span>, If I am not developing anything new,
+                Im always learning new ways to strengthen my skills in Web Devolpment.
+
+            <hr />
+            <ul class="social">
+               <li><a href="https://github.com/al-abuasi"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://twitter.com/abuasi94"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/almuthanna-abuasi-al-47b1a464"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/abuasi48/"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="https://www.facebook.com/al.abuasi"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="mailto:abuasi94@gmail.com"><i class="fa fa-envelope-o "></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/al.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>I have a wide range of skills that include design, front-end development (HTML5, CSS3, Javascript,
+                Jquery, Responsive Design, Bootstrap), back-end development using open source technologies (PHP),
+                Content Management Systems (Wordpress, Joomla, Drupal), Database and Performance (SQL, MySQL).
             </p>
-            <p>I have a wide range of skills that include design,
-                front-end development (HTML5, CSS3, Javascript, Jquery,  Responsive Design, Bootstrap), back-end development using
-                open source technologies (PHP), Content Management Systems (Wordpress, Joomla, Drupal),
-                Database and Performance (SQL, MySQL)
-            </p>
-        </div>
-    </div>
-</div>
-<div class="section s3">
-    <div class="inner">
-        <h1>Projects</h1>
-        <div id="container4">
-            <div id="container3">
-                <div id="container2">
-                    <div id="container1">
-                        <div id="col1">
-                            <!-- Column one start -->
-                            <h2>Philadelphia Causes Website</h2>
-                            <img src="images/causes.png" alt="Philadelphia Causes Website" id="causes" >
 
-                            <p class="skills"><br>The Philadelphia Causes Website was a project developed mainly to provide awareness
-                                about Homeless children in Philadelphia. The site was developed with HTML, CSS,
-                                Javascript, and Jquery.
 
-                            </p>
-                            <!-- Column one end -->
+
+               <div class="columns download">
+                  <p>
+                     <a href="Al_resume.docx" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>New York Design & Code Academy (NYCDA)</h3>
+                  <p class="info"><We>Web Development 100 + Front End</We> <span>&bull;</span> <em class="date">March 2016</em></p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Wilmington University</h3>
+                  <p class="info">B.s. Degree Web Information Systems <span>&bull;</span> <em class="date">May 2015</em></p>
+
+                  <p>
+                      I graduated from Wilmington University in May of 2015 with a Bachelors of Science in Web Information
+                      Systems. Since 2015, I have been working as a Programmer Assistant for
+                      Emergency Response Protocol. Through both my education and work experience, I have had the opportunity
+                      to work on many web and UX Applications.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Emergency Response Protocol</h3>
+                  <p class="info">Intern Programmer <span>&bull;</span> <em class="date">May 2014 - Present</em></p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Freelance Web</h3>
+                  <p class="info">Freelance Developer <span>&bull;</span> <em class="date">January 2014 - Present</em></p>
+
+                  <p>
+                      Freelance web development using the LAMP technology stack for custom websites in addition to
+                      development within WordPress. Perform UI and server-side coding utilizing HTML, CSS, JavaScript,
+                      JQuery, PHP and MySQL. Communicate directly with clients to relay project status and accurately
+                      fulfill client initiatives.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check Out My Portfolio.</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/erp.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Emergency Response Protocol</h5>
+                              <p>Security Business </p>
+          					   </div>
                         </div>
-                        <div id="col2">
-                            <!-- Column two start -->
-                            <h2>ERP Safety Website</h2>
-                            <img src="images/erp.png" alt="ERP Internship Website" id="erp" >
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
 
-                            <p class="skills"> <br>
-                                The ERP Safety website was developed at my recent internship at Emergency Response Protocol.
-                                This Website was developed with HTML, CSS, Javascript, Jquery, Bootstrap, and PHP.
-                            </p>
-                            <!-- Column two end -->
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/causes.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Philadelphia Causes</h5>
+                              <p>Homeless Children of Philadelphia</p>
+          					   </div>
                         </div>
-                        <div id="col3">
-                            <!-- Column three start -->
-                            <h2>Javascript Digital Clock</h2>
-                            <img src="images/clock.png" alt="Javascript Digital Clock" id="clock" >
-                            <p class="skills"> <br>The Javascript clock was a simple Digital Clock application developed mainly with Jquery,
-                                HTML, and CSS.
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
 
-                            </p>
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/clock.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Javascript Clock</h5>
+                              <p>Interactive Javascript Clock</p>
+          					   </div>
                         </div>
-                        <div id="col4">
-                            <!-- Column four start -->
-                            <h2>More Coming Soon</h2>
-                            <p class="skills">This website will be constantly updated with projects and applications.
-                                Come back again for more.
-                            </p>
-                            <!-- Column four end -->
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/business.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Philadelphia Software Company</h5>
+                              <p>Software Company</p>
+          					   </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/travel.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Travel Agency</h5>
+                              <p>Website Designed for a Travel Agency</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-06" title="">
+                        <img alt="" src="images/school.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Private School</h5>
+                              <p>Website Designed for a Private School</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-07" title="">
+                        <img alt="" src="images/coming_soon.gif">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>More Coming Soon</h5>
+                              <p>Check back again for more</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-08" title="">
+                        <img alt="" src="images/coming_soon.gif">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>More Coming Soon</h5>
+                              <p>Check back again for more</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div>  <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/erp.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Emergency Response Protocol</h4>
+			      <p>This Website was Developed during my Internship at Emergency Response Protocol. It was originally pulled from an a
+                      HTML Template and enhanced/ redesigned to suit the clients needs. This site was developed using HTML, CSS, Javascript,
+                      Jquery, Bootstrap, and PHP.</p>
+
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.erpsafety.com">See It Live  </a>
+                <br>
+                <a href="https://github.com/al-abuasi/ERP-Website">  See the Code</a>
+		         <a class="popup-modal-dismiss">Close</a>
             </div>
-        </div>
-    </div>
-</div>
-<div class="section s4">
-    <div class="inner">
-        <h1>Contact Me</h1>
-        <form action="/my-handling-form-page" method="post">
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" />
+
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/causes.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Philadelphia Causes Website</h4>
+			      <p>This Website was designed to showcase a cause in ths city of Philadelphia. As a group we selected the Homless Children.
+                      This site was designed with HTML, CSS, Javascript, and Jquery.</p>
+
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/brandonkeeks/philly-causes-page">See the Code</a>
+                <br>
+                <a href="#">See it Live</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/clock.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Javascript Clock</h4>
+			      <p>This is an Application of a Digital Clock developed with Javascript/Jquery and enhanced with CSS.</p>
+
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/al-abuasi/Javascript-Clock">See the Code</a>
+                <br>
+                <a href="#">See it Live</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/business.png" alt="Business Website" />
+
+		      <div class="description-box">
+			      <h4>Philadelphia Software Company</h4>
+			      <p> This Website was developed for a local Software Company in Philadelphia. This website's structure is mainly a One Page Layout.
+                      It has been developed with HTML, CSS, Javascript, and Jquery.</p>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/al-abuasi/business-website">See the Code</a>
+		         <br>
+                <a class="#">See it Live</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/travel.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Travel Agency Website</h4>
+			      <p>This Website is being developed for a local travel Agency. This site will consist of HTML, CSS,
+                      Javascript, and Jquery.</p>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/al-abuasi/Travel-Agency">See the Code</a>
+                <br>
+                <a href="#">See it Live</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-05 End -->
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/school.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Private School</h4>
+			      <p>This Website is being Migrated from an outdated Content Managament System (Joomla) to Wordpress. The Front-End of
+                      this Website will consist of HTML, CSS, Javascript, Jquery, and Boostrap.</p>
+
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.github.com/al-abuasi/private-school">See the Code</a>
+                <br>
+                <a href="#">See it Live</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-06 End -->
+
+         <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/coming_soon.gif" alt="" />
+
+		      <div class="description-box">
+			      <h4>Coming Soon</h4>
+			      <p>Check back again for more applications.</p>
+		      </div>
+
+            <div class="link-box">
+               <a href="#">See the Code</a>
+                <br>
+                <a href="#">See it Live</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-07 End -->
+
+         <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/coming_soon.gif" alt="" />
+
+		      <div class="description-box">
+			      <h4>Coming Soon</h4>
+			      <p>Check Back Again for More Applications </p>
+		      </div>
+
+            <div class="link-box">
+               <a href="#">See the Code</a>
+                <br>
+                <a href="#">See it Live</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
 
             </div>
-            <div>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_email" />
+
+            <div class="ten columns">
+
+                  <p class="lead">
+                      If you have a project that you want to get started, think you need my help with something
+                      or just fancy saying hey, then get in touch.
+                  </p>
 
             </div>
-            <div>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
 
-            </div>
+         </div>
 
-            <div class="button">
-                <button type="submit">Send your message</button>
-            </div>
-        </form>
-    </div>
-</div>
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+                <li><a href="https://github.com/al-abuasi"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://twitter.com/abuasi94"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/almuthanna-abuasi-al-47b1a464"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/abuasi48/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/al.abuasi"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="mailto:abuasi94@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy;  2016 Al Abuasi</li>
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+
+   <script src="js/waypoints.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
 </body>
+
 </html>
