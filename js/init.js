@@ -113,7 +113,7 @@
 
 
 /*----------------------------------------------------*/
-/*	contact form
+/*	contact form    , javascript format taken  from http://jdp.org.uk/ajax/2015/05/20/ajax-forms-without-jquery.html
  ------------------------------------------------------*/
 
 $('form#contactForm button.submit').click(function() {
