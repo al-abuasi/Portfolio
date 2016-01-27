@@ -408,7 +408,7 @@ ul#nav li.current a { color: #F06000; }
    color: #fff;
 	font: 11px/21px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
-   letter-spacing: 3px;
+   margin:5px;
    cursor: pointer;
 }
 .popup-modal a:hover {	color: #00CCCC; }
